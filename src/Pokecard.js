@@ -9,12 +9,12 @@ export class Pokecard extends Component {
         let imgSrc = `${POKE_API}${id}.png`
         return (
             <div className="pokecard">
-                <h1>{name}</h1>
+                <h1 className="pokecard-title">{name}</h1>
                 <img src={imgSrc} alt={name} />
-                <div>
+                <div className="pokecard-data">
                     Type: {type}
                 </div>
-                <div>
+                <div className="pokecard-data">
                     EXP: {exp}
                 </div>
             </div>
