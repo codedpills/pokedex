@@ -3,3 +3,11 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.pokedex-winner {
+    color: rgb(6, 202, 104);
+}
+
+.pokedex-loser {
+    color: brown;
+}
