@@ -12,7 +12,7 @@ export class Pokedex extends Component {
             {id: 25, name: 'Pikachu', type: 'electric', exp: 112},
             {id: 39, name: 'Jigglypuff', type: 'normal', exp: 95},
             {id: 94, name: 'Gengar', type: 'poison', exp: 225},
-            {id: 113, name: 'Eevee', type: 'normal', exp: '65'}
+            {id: 113, name: 'Eevee', type: 'normal', exp: 65}
         ]
     };
     render() {
@@ -25,6 +25,8 @@ export class Pokedex extends Component {
         return (
             <div className="pokedex">
                 <h1>Pokedex</h1>
+                <p>Total experience: {this.props.exp}</p>
+                <p>{this.props.isWinner ? 'WINNER!' : 'LOSER!'}</p>
                 <div className="pokedex-card">
                     { pokemon }
                 </div>
